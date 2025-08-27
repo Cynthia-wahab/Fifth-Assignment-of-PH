@@ -18,7 +18,8 @@
 <body>
     <header>
         <nav class=" max-w-[1920px] mx-auto p-5 pb-0 ">
-            <div class="flex justify-between items-center  px-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center  px-8">
+                <!-- nav-left-side -->
                 <div class="left-side flex items-center gap-5 ">
                     <img src="./assets/logo.png" alt="" class="h-[50px]">
                     <div>
@@ -26,12 +27,13 @@
                     </div>
 
                 </div>
+                <!-- nav-right-side -->
                 <div class="right-side flex items-center">
-                    <div class="right-side flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl p-5 h-[52px] px-8">
+                    <div class=" flex items-center gap-2 bg-[#41ff6b1a] rounded-3xl p-5 h-[52px] px-8">
                         <h2><span class="font-extrabold">0</span></h2>
                         <img src="./assets/heart.png" alt="" class="w-[30px]">
                     </div>
-                    <div class="right-side flex items-center gap-2 ml-5 bg-[#41ff6b1a] rounded-3xl p-5 h-[52px] px-8">
+                    <div class="flex items-center gap-2 ml-5 bg-[#41ff6b1a] rounded-3xl p-5 h-[52px] px-8">
                         <h2 class=""><span class="font-extrabold">100</span></h2>
                         <img src="./assets/coin.png" alt="" class="w-[24px]">
                     </div>
@@ -50,10 +52,10 @@
     </header>
     <main class="bg-[#f5fff6] max-w-[1920px] pt-3">
         <!-- service section here -->
-        <section id="service-container" class="w-11/12 mx-auto py-5 grid grid-cols-12 gap-8" >
-            <section id="hotline-box" class=" col-span-9">
+        <section id="service-container" class="w-11/12 mx-auto py-5 grid grid-cols-1 lg:grid-cols-12 gap-8" >
+            <section id="hotline-box" class=" col-span-1 lg:col-span-9">
                 <!-- 1st service box -->
-                <div class="grid grid-cols-3 gap-5">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
                     <div>
                         <div class="card bg-base-100 shadow-sm">
                             <div class="card-body">
@@ -138,7 +140,7 @@
 
                 </div>
                 <!-- 2nd service box -->
-                 <div class="grid grid-cols-3 gap-5 mt-5">
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
                     <div>
                         <div class="card bg-base-100 shadow-sm">
                             <div class="card-body">
@@ -223,7 +225,7 @@
 
                 </div>
                 <!-- 3rd service box -->
-                 <div class="grid grid-cols-3 gap-5 mt-5">
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
                     <div>
                         <div class="card bg-base-100 shadow-sm">
                             <div class="card-body">
@@ -310,7 +312,7 @@
 
 
             </section>
-            <aside id="call-history" class="bg-white col-span-3">
+            <aside id="call-history" class="bg-white col-span-1 lg:col-span-3">
                 <div class="flex justify-between items-center p-5">
                     <div class="flex items-center gap-2">
                     <i class="fa-regular fa-clock"></i>
