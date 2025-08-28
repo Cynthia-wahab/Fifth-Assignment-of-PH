@@ -62,5 +62,15 @@ for (let callButton of callbtns) {
                 callHistoryContainer.appendChild(div)
     })
 }
+// clear call history 
+
+const clearHistoryButton = document.getElementById("clear-btn")
+
+clearHistoryButton.addEventListener("click", function(){
+    callHistoryData.length = 0;
+    callHistoryContainer.innerHTML = ""
+    
+})
+
 
 
