@@ -52,7 +52,7 @@ for (let callButton of callbtns) {
         div.innerHTML = `
         <div class="bg-[#fafafa] p-5 mb-3 flex justify-between items-center rounded-2xl">
                         <div>
-                            <h2 class="text-black font-semibold text-[18px]">${data.name}</h2>
+                            <h2 class="text-[#151515] font-semibold text-[18px]">${data.name}</h2>
                             <p class="text-gray-400">${data.number}</p>
                         </div>
                         <div>
@@ -69,8 +69,24 @@ const clearHistoryButton = document.getElementById("clear-btn")
 clearHistoryButton.addEventListener("click", function(){
     callHistoryData.length = 0;
     callHistoryContainer.innerHTML = ""
-    
+
 })
 
 
+// copy button feature
 
+let totalCopyCount = 0;
+const copybtns = document.getElementsByClassName("copy-btn")
+
+
+for (let copyButton of copybtns) {
+    copyButton.addEventListener("click", function(){
+        totalCopyCount++
+        document.getElementById("copy-count").textContent = totalCopyCount
+        let card = copyButton.closest(".card-body")
+        let number = card.querySelector(".call-number").textContent
+        alert(`Number copied - ${number}`)
+
+        navigator.clipboard.writeText(number)
+    })
+}
